@@ -4,9 +4,9 @@
   "description": "A website starter-kit for rapid SPA scaffolding",
   "main": "index.js",
   "scripts": {
-    "prestart": "node build/startMsg.js",
+    "prestart": "babel-node build/startMsg.js",
     "start": "npm-run-all --parallel security-check open:src",
-    "open:src": "node build/srcServer.js",
+    "open:src": "babel-node build/srcServer.js",
     "security-check": "nsp check",
     "test": "echo \"Error: no test specified\" && exit 1",
     "localtunnel": "lt --port 3000",
