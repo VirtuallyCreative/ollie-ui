@@ -1,7 +1,7 @@
 import {getUsers} from './api/getUsers';
 
 // Populate table of users vai mock API call
-getUsers('users').then(result => {
+getUsers().then(result => {
   let usersBody = "";
 
   result.forEach(user => {
