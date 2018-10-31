@@ -2,7 +2,7 @@ import {expect} from 'chai';
 import jsdom from 'jsdom';
 const { JSDOM } = jsdom;
 
-describe('index.html', () => {
+describe('getUsers.js', () => {
   //Scaffold dom to regular document object
   before(function() {
     return JSDOM.fromFile('src/index.html')
@@ -12,8 +12,11 @@ describe('index.html', () => {
       });
     })
   // Start 'it should' assertion like normal...
-  it('should include h1 that says Users', (done) => {
-        expect(document.getElementsByTagName('h1')[0].innerHTML).to.equal("Users");
+  it('should have Users (and thus, a user.id) populated into a table', (done) => {
+        var rowIndex = 0;
+        var cellIndex = 1;
+        var cellTestID = document.getElementById('userTbl').rows[rowIndex].cells[cellIndex];
+        expect(cellTestID.innerHTML).to.equal("1");
         done();
         window.close();
     })

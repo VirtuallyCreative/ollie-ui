@@ -117,6 +117,10 @@ Webpack is responsible for several operations during the build process.
 
 * Auto­mat­ic .webp Cre­ation — Chrome, Edge, and Fire­fox all are sup­port­ing .webp, and can signifigantly boost performance.
 
+## HTTP & API
+
+Ollie uses a centralized API which configures all calls, handles pre-loader logic and also errors.
+
 ## Built With
 
 * [Node](http://#)

@@ -1,20 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Ollie!</title>
-    <link rel="stylesheet" href="https://unpkg.com/allegretto@latest">
+<html lang="en">
 
-    <script src="bundle.js" type="javascript"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Ollie!</title>
+  <!-- Load Allegretto from CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/allegretto@0.0.6/dist/retto.min.css">
 
-  </head>
-  <body>
+  <script src="bundle.js" type="javascript"></script>
+</head>
+
+<body>
+
   <section class="section">
     <div class="container">
-      <h1 class="title">Welcome to Ollie Framework!</h1>
-      <p class="subtitle">My first website with <strong>Retto CSS & Ares JS</strong>!</p>
+      <h1>Users</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody id="userTbl">
+
+        </tbody>
+      </table>
     </div>
   </section>
-  </body>
+
+  <footer class="is-text-center">
+    <p>
+      <a href="#top">back to top</a> &bull; <a href="https://github.com/VirtuallyCreative/Ollie" target="_blank">View
+        on GitHub</a>
+    </p>
+
+    <h5>Made with &lt;3 by <a href="https://virtuallycreative.ca/" target="_blank">Virtually(Creative)</a>
+    </h5>
+  </footer>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11177404-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-11177404-5');
+  </script>
+</body>
+
 </html>

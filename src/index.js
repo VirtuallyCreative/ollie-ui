@@ -1,1 +1,18 @@
-import './app.css'
+import {getUsers} from './api/getUsers';
+
+// Populate table of users vai mock API call
+getUsers('users').then(result => {
+  let usersBody = "";
+
+  result.forEach(user => {
+    usersBody += `<tr>
+    <td><a href="#" data-id="${user.id}" class="deleteUser">Delete</a></td>
+    <td>${user.id}</td>
+    <td>${user.firstName}</td>
+    <td>${user.lastName}</td>
+    <td>${user.email}</td>
+    </tr>`
+  });
+  var userTbl = global.document.getElementById('userTbl');
+  userTbl.innerHTML = usersBody;
+})
