@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
 })
 
 app.get('/users', function(req, res) {
-  // Hard coded for simplicity. Pretend this is a real endpoint...
+  // Hard coded for simplicity. Pretend this is a real endpoint... disable for real production
   res.json([
     {"id":1,"firstName":"Bob","lastName":"Smith","email":"bob.smith@email.com"},
     {"id":2,"firstName":"Abe","lastName":"Doe","email":"abe.doe@email.com"},
