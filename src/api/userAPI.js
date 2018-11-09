@@ -4,7 +4,7 @@ import getEnvUrl from './baseUrl'
 const envURL = getEnvUrl();
 
 export function getUsers(url) {
-  return getURL("/" + url)
+  return getURL(url)
 }
 
 export function deleteUser(id) {
@@ -18,7 +18,7 @@ function getURL(url) {
 
 // Can't call func delete since reserved word.
 function del(url) {
-  const request = new Request(envURL + "/" + url, {
+  const request = new Request(envURL + url, {
     method: 'DELETE'
   })
 

@@ -8,7 +8,7 @@ process.env.NODE_ENV = 'production'
 // Let Dev know *something* is occuring...
 console.log(chalk.blue('Minifying bundle for production. This will take a sec...'))
 
-const jsonStats = stats.toJson();
+const jsonStats = stats.toJson()
 
 if (jsonStats.hasErrors) {
   return jsonStats.errors.map(error => console.log(chalk.red(error)))
