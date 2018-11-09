@@ -5,7 +5,7 @@ import chalk from 'chalk'
 
 process.env.NODE_ENV = 'production'
 
-// Let's Dev know *something* is occuring...
+// Let Dev know *something* is occuring...
 console.log(chalk.blue('Minifying bundle for production. This will take a sec...'))
 
 const jsonStats = stats.toJson();
