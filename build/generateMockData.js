@@ -1,5 +1,5 @@
-/* This script generates mock data for local developmoent.
- * This way you don't ahve to point to an actual API, but
+/* This script generates mock data for local development.
+ * This way you don't have to point to an actual API, but
  * you can enjoy realistic, but randomized data, and rapid
  * page loads due to local, static data.
  */
