@@ -30,9 +30,9 @@ export default {
     })
   ],
   module: {
-    rules: [
-      {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
-      {test: /\.css$/, use: ['style-loader','css-loader']}
+    loaders: [
+      {test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader']},
+      {test: /\.css$/, loaders: ['style-loader','css-loader']}
     ]
   }
 }
