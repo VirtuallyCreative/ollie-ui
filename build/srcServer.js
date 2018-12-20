@@ -7,6 +7,10 @@ import config from '../webpack.config.dev'
 const port = 3000
 const app = express()
 const compiler = webpack(config)
+const appInsights = require('applicationinsights');
+require('dotenv').config();
+let APIkey = process.env.APPINSIGHTS_INSTRUMENTATIONKEY;
+appInsights.setup(APIkey).start();
 
 app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath

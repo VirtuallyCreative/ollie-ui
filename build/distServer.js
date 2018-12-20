@@ -3,6 +3,12 @@ import path from 'path'
 import open  from 'open'
 import compression from 'compression'
 
+
+const appInsights = require('applicationinsights');
+require('dotenv').config();
+let APIkey = process.env.APPINSIGHTS_INSTRUMENTATIONKEY;
+appInsights.setup(APIkey).start();
+
 const port = 3000
 const app = express()
 
