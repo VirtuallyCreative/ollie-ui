@@ -74,12 +74,13 @@ Ollie sets some environment standards (EditorConfig) and handles scaffolding the
 | json-server                 | Serve a JSON API locally                                                                                  |
 | localtunnel                 | Create a tunnel to your local machine                                                                     |
 | mocha                       | JavaScript testing library                                                                                |
-| nock                        | Mock HTTP requests via Node                                                                               |
 | npm-run-all                 | Display results of multiple commands on single command line                                               |
 | numeral                     | Library for working with numbers                                                                          |
 | open                        | Open app in default browser                                                                               |
 | rimraf                      | Delete files                                                                                              |
 | style-loader                | Add Style support to Webpack                                                                              |
+| supertest                   | Mock HTTP requests
+     |
 | webpack                     | Bundler with plugin system and integrated development server                                              |
 | webpack-dev-middleware      | Adds middleware support to webpack                                                                        |
 | webpack-hot-middleware      | Adds hot reloading to webpack                                                                             |

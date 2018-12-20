@@ -1,34 +1,39 @@
-//During the test the env variable is set to test
-process.env.NODE_ENV = 'test';
+var should = require('chai').should(),
+expect = require('chai').expect,
+supertest = require('supertest'),
+api = supertest('http://localhost:3001');
 
-//Require the dev-dependencies
-let chai = require('chai');
-let chaiHttp = require('chai-http');
-let server = require('server');
-let should = chai.should();
-
-chai.use(chaiHttp);
-//Our parent block
-describe('Users', () => {
-    beforeEach((done) => { //Before each test we empty the database
-        Users.remove({}, (err) => {
-           done();
-        });
-    });
-/*
-  * Test the /GET route
-  */
-  describe('/GET users', () => {
-      it('it should GET all the users', (done) => {
-        chai.request(server)
-            .get('/users')
-            .end((err, res) => {
-                  res.should.have.status(200);
-                  res.body.should.be.a('array');
-                  res.body.length.should.be.eql(0);
-              done();
-            });
-      });
+describe('Users', function() {
+  // It should return 200
+  it('should return 200 response', function(done) {
+    api.get('/users')
+      .set('Accept', 'application/json')
+      .expect(200,done);
   });
 
-});
+  // It should return user data
+  it('should be a json object with keys and values', function(done) {
+    api.get('/users')
+      .set('Accept', 'application/json')
+      .expect(200)
+      .end(function(err, res) {
+        expect(res).to.be.a('object');
+
+        //expect(res.body).to.have.property("id");
+        //expect(res.body.id).to.not.equal(null);
+
+        //expect(res.body).to.have.property("firstName");
+        //expect(res.body.firstName).to.not.equal(null);
+
+        //expect(res.body).to.have.property("lastName");
+        //expect(res.body.lastName).to.not.equal(null);
+
+        //expect(res.body).to.have.property("email");
+        //expect(res.body.email).to.not.equal(null);
+
+        done();
+      })
+  })
+
+
+})

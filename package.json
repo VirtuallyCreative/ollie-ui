@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "babel-node build/startMsg.js",
-    "start": "npm-run-all --parallel open:src lint:watch test:watch start-mockapi",
+    "start": "npm-run-all --parallel open:src lint:watch start-mockapi test:watch",
     "open:src": "babel-node build/srcServer.js",
     "lint": "esw webpack.config.* src build --color",
     "lint:watch": "npm run lint -- --watch",
@@ -72,6 +72,7 @@
     "open": "0.0.5",
     "rimraf": "2.6.2",
     "style-loader": "0.23.1",
+    "supertest": "^3.3.0",
     "surge": "0.20.1",
     "webpack": "4.25.1",
     "webpack-dev-middleware": "3.4.0",

@@ -11,7 +11,7 @@ console.log(chalk.blue('Minifying bundle for production. This will take a sec...
 const jsonStats = stats.toJson()
 
 if (jsonStats.hasErrors) {
-  return jsonStats.errors.map(error => console.log(chalk.red(error)))
+  jsonStats.errors.map(error => console.log(chalk.red(error)))
 }
 
 if (jsonStats.hasWarnings) {

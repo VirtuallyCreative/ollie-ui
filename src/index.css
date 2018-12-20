@@ -5,3 +5,7 @@
 a {
   color: var(--primary-color);
 }
+
+table {
+  overflow-y: hidden;
+}
