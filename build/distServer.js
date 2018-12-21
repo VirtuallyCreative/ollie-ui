@@ -1,3 +1,5 @@
+// DO NOT USE FOR ACTUAL PRODUCTION SERVER
+// THIS IS TO TEST PRODUCTION BUILD LOCALLY BEFORE DEPLOYMENT
 import express  from 'express'
 import path from 'path'
 import open  from 'open'

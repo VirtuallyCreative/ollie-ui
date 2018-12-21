@@ -59,7 +59,8 @@ export default {
       // using htmlWebpackPlugin.options.varName
       trackJSToken: 'INSERT YOUR TOKEN HERE'
     }),
-
+    // De-dupe - eliminates duplicate pkgs when generating bundle
+    new webpack.optimize.DedupePlugin(),
     // Minify JS
     new webpack.optimize.UglifyJsPlugin()
   ],
