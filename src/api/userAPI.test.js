@@ -1,9 +1,12 @@
-var should = require('chai').should(),
-expect = require('chai').expect,
+var expect = require('chai').expect,
 supertest = require('supertest'),
 api = supertest('http://localhost:3001');
+import express from 'express';
 
-describe('Users', function() {
+let app = express();
+
+if ( !app.settings.env === 'production' ) {
+  describe('Users', function() {
   // It should return 200
   it('should return 200 response', function(done) {
     api.get('/users')
@@ -34,6 +37,5 @@ describe('Users', function() {
         done();
       })
   })
-
-
-})
+  })
+}

@@ -5,6 +5,7 @@ import WebpackMd5Hash from 'webpack-md5-hash';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 export default {
+  mode: 'production',
   resolve: {
     extensions: ['*', '.js', '.jsx', '.json']
   },
@@ -19,6 +20,18 @@ export default {
     publicPath: '/',
     filename: '[name].[chunkhash].js'
   },
+  // Webpack 4 removed the commonsChunkPlugin. Use optimization.splitChunks instead.
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendor',
+          chunks: 'all'
+        }
+      }
+    }
+  },
   plugins: [
     // Global loader configuration
     new webpack.LoaderOptionsPlugin({
@@ -28,16 +41,10 @@ export default {
     }),
 
     // Generate an external css file with a hash in the filename
-    new ExtractTextPlugin('[name].[contenthash].css'),
+    new ExtractTextPlugin('[name].[md5:contenthash:hex:20].css'),
 
     // Hash the files using MD5 so that their names change when the content changes.
     new WebpackMd5Hash(),
-
-    // Use CommonsChunkPlugin to create a separate bundle
-    // of vendor libraries so that they're cached separately.
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor'
-    }),
 
     // Create HTML file that includes reference to bundled JS.
     new HtmlWebpackPlugin({
@@ -58,15 +65,11 @@ export default {
       // Properties you define here are available in index.html
       // using htmlWebpackPlugin.options.varName
       trackJSToken: 'INSERT YOUR TOKEN HERE'
-    }),
-    // De-dupe - eliminates duplicate pkgs when generating bundle
-    new webpack.optimize.DedupePlugin(),
-    // Minify JS
-    new webpack.optimize.UglifyJsPlugin()
+    })
   ],
   module: {
-    loaders: [
-      {test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader']},
+    rules: [
+      {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
       {test: /\.css$/, loader: ExtractTextPlugin.extract('css-loader?sourceMap')}
     ]
   }
