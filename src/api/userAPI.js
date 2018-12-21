@@ -1,37 +1,33 @@
 import 'whatwg-fetch';
-import getEnvUrl from './baseUrl'
+import getBaseUrl from './baseUrl';
 
-const envURL = getEnvUrl();
+const baseUrl = getBaseUrl();
 
-export function getUsers(url) {
-  return getURL(url)
+export function getUsers() {
+  return get('users');
 }
 
 export function deleteUser(id) {
-  return del(`users/${id}`)
+  return del(`users/${id}`);
 }
 
-// Private Response Handlers
-function getURL(url) {
-  return fetch(envURL + url).then(onSuccess, onError)
+function get(url) {
+  return fetch(baseUrl + url).then(onSuccess, onError);
 }
 
 // Can't call func delete since reserved word.
 function del(url) {
-  const request = new Request(envURL + url, {
+  const request = new Request(baseUrl + url, {
     method: 'DELETE'
-  })
+  });
 
-  return fetch(request).then(onSuccess, onError)
+  return fetch(request).then(onSuccess, onError);
 }
 
 function onSuccess(response) {
-  return response.json()
+  return response.json();
 }
+
 function onError(error) {
-  console.log("Error: " + error) // eslint-disable-line no-console
+  console.log(error); // eslint-disable-line no-console
 }
-
-
-
-

@@ -30,5 +30,5 @@ export const schema = {
       }
     }
   },
-  "required": ["users"]
+  "required": ['users']
 };

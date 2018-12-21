@@ -15,7 +15,7 @@ const json = JSON.stringify(jsf.generate(schema))
 
 fs.writeFile('./src/api/db.json', json, function (err) {
   if (err) {
-    return console.log(chalk.red(err))
+    return console.log(chalk.red("Mock data failed: " + err))
   } else {
     console.log(chalk.green("Mock data generated."))
   }

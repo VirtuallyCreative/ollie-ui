@@ -39,7 +39,6 @@
   },
   "homepage": "https://github.com/VirtuallyCreative/Ollie#readme",
   "dependencies": {
-    "dotenv-webpack": "^1.5.7",
     "whatwg-fetch": "3.0.0"
   },
   "devDependencies": {

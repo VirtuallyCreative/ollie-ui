@@ -9,7 +9,7 @@ const app = express()
 const compiler = webpack(config)
 
 const appInsights = require('applicationinsights');
-appInsights.setup(process.env.APPINSIGHTS_INSTRUMENTATIONKEY).start();
+appInsights.setup('#').start();
 
 app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
