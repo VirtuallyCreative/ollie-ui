@@ -48,7 +48,7 @@ export default {
 
     // Create HTML file that includes reference to bundled JS.
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: 'src/index.ejs',
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -64,7 +64,8 @@ export default {
       inject: true,
       // Properties you define here are available in index.html
       // using htmlWebpackPlugin.options.varName
-      trackJSToken: 'INSERT YOUR TOKEN HERE'
+      appInsightsToken: '56d9fbd4-391b-4119-9819-702c1b8e8540',
+      sentryToken: 'https://ae621f9871ef4ba7bb4ba949e7f537c5@sentry.io/1361594'
     })
   ],
   module: {
