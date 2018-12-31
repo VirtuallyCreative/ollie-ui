@@ -1,5 +1,5 @@
 export default function getBaseUrl() {
-  return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : '/';
+  return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://ollie-api.herokuapp.com/';
 }
 
 // https://stackoverflow.com/a/901144/534605
