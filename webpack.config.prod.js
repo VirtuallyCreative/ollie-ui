@@ -64,7 +64,6 @@ export default {
       inject: true,
       // Properties you define here are available in index.html
       // using htmlWebpackPlugin.options.varName
-      appInsightsToken: '56d9fbd4-391b-4119-9819-702c1b8e8540',
       sentryToken: 'https://ae621f9871ef4ba7bb4ba949e7f537c5@sentry.io/1361594'
     })
   ],

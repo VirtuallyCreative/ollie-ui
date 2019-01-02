@@ -6,25 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hello Ollie!</title>
 
+  <!-- Sentry.io Tracking
   <% if (htmlWebpackPlugin.options.sentryToken) { %>
   <script src="https://browser.sentry-cdn.com/4.4.2/bundle.min.js" crossorigin="anonymous"></script>
   <script>Sentry.init({ dsn: '<%=htmlWebpackPlugin.options.sentryToken%>' });</script>
-  <% } %>
+  <% } %> -->
 
-  <% if (htmlWebpackPlugin.options.appInsightsToken) { %>
-  <script type="text/javascript">
-    var appInsights=window.appInsights||function(config){
-      function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t
-      }({
-          instrumentationKey: '<%=htmlWebpackPlugin.options.appInsightsToken%>'
-      });
-
-      window.appInsights=appInsights;
-      appInsights.trackPageView();
-  </script>
-    <% } %>
-
-      <!-- Load Allegretto from CDN -->
+  <!-- Load Allegretto from CDN -->
   <link rel="stylesheet" href="https://unpkg.com/allegretto@latest/dist/retto.min.css">
 </head>
 
@@ -59,6 +47,25 @@
     <h5>Made with &lt;3 by <a href="https://virtuallycreative.ca/" target="_blank">Virtually(Creative)</a>
     </h5>
   </footer>
+
+
+  <!-- Matomo -->
+  <script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setCookieDomain", "*.ollie-ui.surge.sh"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.virtuallycreative.ca/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '6']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+  </script>
+  <noscript><p><img src="//analytics.virtuallycreative.ca/piwik.php?idsite=6&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+  <!-- End Matomo Code -->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11177404-5"></script>
