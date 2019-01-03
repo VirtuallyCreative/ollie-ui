@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/VirtuallyCreative/Ollie.svg?branch=master)](https://travis-ci.org/VirtuallyCreative/Ollie)
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/t3wv39owatkxpx9m?svg=true)](https://ci.appveyor.com/project/vip3rousmango/ollie)
+[![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://virtuallycreative.gitbook.io/ollie-framework/)
 <br>
 [![GitHub issues](https://img.shields.io/github/issues/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/Ollie/issues)
 [![GitHub forks](https://img.shields.io/github/forks/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/Ollie/network)
@@ -80,7 +81,7 @@ Ollie sets some environment standards (EditorConfig) and handles scaffolding the
 | rimraf                      | Delete files                                                                                              |
 | style-loader                | Add Style support to Webpack                                                                              |
 | supertest                   | Mock HTTP requests
-     |
+  |
 | webpack                     | Bundler with plugin system and integrated development server                                              |
 | webpack-dev-middleware      | Adds middleware support to webpack                                                                        |
 | webpack-hot-middleware      | Adds hot reloading to webpack                                                                             |
