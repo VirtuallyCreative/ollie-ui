@@ -61,10 +61,9 @@ export default {
         minifyCSS: true,
         minifyURLs: true
       },
-      inject: true,
+      inject: true
       // Properties you define here are available in index.html
       // using htmlWebpackPlugin.options.varName
-      rollbarToken: '0a3d44efedcb429dbe427acd2f79f752'
     })
   ],
   module: {
