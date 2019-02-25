@@ -36,5 +36,5 @@ function onSuccess(response) {
 
 function onError(error) {
   console.log(error); // eslint-disable-line no-console
-  Rollbar.critical("API Issue: ", error);
+  rollbar.critical("API Issue: ", error);
 }

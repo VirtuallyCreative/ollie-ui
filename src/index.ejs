@@ -7,28 +7,34 @@
   <title>Hello Ollie!</title>
 
   <!-- Load Allegretto from CDN -->
-  <link rel="stylesheet" href="https://unpkg.com/allegretto@latest/">
+  <link rel="stylesheet" href="https://unpkg.com/allegretto@latest/dist/retto.min.css" type="text/css" media="all">
 </head>
 
 <body>
 
   <section class="section">
     <div class="container">
-      <h1>Users</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>&nbsp;</th>
-            <th>Id</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody id="userTbl">
+      <div class="row">
+      <div class="col-12">
+        <h1>Users</h1>
+        </div>
+        <div class="col">
+          <table>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody id="userTbl">
 
-        </tbody>
-      </table>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -45,31 +51,42 @@
 
   <!-- Matomo -->
   <script type="text/javascript">
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setCookieDomain", "*.ollie-ui.surge.sh"]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//analytics.virtuallycreative.ca/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '6']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setCookieDomain", "*.ollie-ui.surge.sh"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "//analytics.virtuallycreative.ca/";
+      _paq.push(['setTrackerUrl', u + 'piwik.php']);
+      _paq.push(['setSiteId', '6']);
+      var d = document,
+        g = d.createElement('script'),
+        s = d.getElementsByTagName('script')[0];
+      g.type = 'text/javascript';
+      g.async = true;
+      g.defer = true;
+      g.src = u + 'piwik.js';
+      s.parentNode.insertBefore(g, s);
+    })();
+
   </script>
-  <noscript><p><img src="//analytics.virtuallycreative.ca/piwik.php?idsite=6&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+  <noscript>
+    <p><img src="//analytics.virtuallycreative.ca/piwik.php?idsite=6&amp;rec=1" style="border:0;" alt="" /></p>
+  </noscript>
   <!-- End Matomo Code -->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-11177404-5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
     gtag('config', 'UA-11177404-5');
+
   </script>
 </body>
 
