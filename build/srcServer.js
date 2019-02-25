@@ -3,17 +3,18 @@ import path from 'path'
 import open  from 'open'
 import webpack from 'webpack'
 import config from '../webpack.config.dev'
+import Rollbar from 'rollbar'
 require('dotenv').config();
+
 
 const port = 3000
 const app = express()
 const compiler = webpack(config)
 
 // include and initialize the rollbar library with your access token
-const Rollbar = require("rollbar");
 let rollbar = new Rollbar({
   accessToken: '0a3d44efedcb429dbe427acd2f79f752',
-  environment: "production",
+  environment: "development",
   captureUncaught: true,
   captureUnhandledRejections: true,
   autoInstrument: true
