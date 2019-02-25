@@ -24,4 +24,4 @@ var rollbar = new Rollbar({
 });
 
 // record a generic message and send it to Rollbar
-rollbar.log("Hi, this is Ollie's Error Handler.");
+rollbar.log("Hi, this test's if Ollie's Error Handler works.");

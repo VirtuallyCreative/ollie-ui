@@ -1,5 +1,11 @@
 import 'whatwg-fetch';
 import getBaseUrl from './baseUrl';
+var Rollbar = require("rollbar");
+var rollbar = new Rollbar({
+  accessToken: '0a3d44efedcb429dbe427acd2f79f752',
+  captureUncaught: true,
+  captureUnhandledRejections: true
+});
 
 const baseUrl = getBaseUrl();
 
@@ -30,4 +36,5 @@ function onSuccess(response) {
 
 function onError(error) {
   console.log(error); // eslint-disable-line no-console
+  Rollbar.critical("API Issue: ", error);
 }

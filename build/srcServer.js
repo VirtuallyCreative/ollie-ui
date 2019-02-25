@@ -9,10 +9,17 @@ const port = 3000
 const app = express()
 const compiler = webpack(config)
 
-const Sentry = require('@sentry/node');
-Sentry.init({ dsn: process.env.sentryAPPID });
+// include and initialize the rollbar library with your access token
+const Rollbar = require("rollbar");
+let rollbar = new Rollbar({
+  accessToken: '0a3d44efedcb429dbe427acd2f79f752',
+  environment: "production",
+  captureUncaught: true,
+  captureUnhandledRejections: true,
+  autoInstrument: true
+});
 
-app.use(Sentry.Handlers.requestHandler());
+app.use(rollbar.errorHandler());
 
 app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
@@ -32,11 +39,12 @@ app.get('/users', function(req, res) {
 })
 
 // The error handler must be before any other error middleware
-app.use(Sentry.Handlers.errorHandler());
+app.use(rollbar.errorHandler());
 
 app.listen(port, function(err) {
     if (err) {
         console.log(err) // eslint-disable-line no-console
+        rollbar.critical("Critical Error Caught: ", err)
     } else {
         open('http://localhost:' + port)
     }
