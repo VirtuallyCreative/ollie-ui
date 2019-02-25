@@ -15,3 +15,13 @@
 /* eslint-disable no-unused-vars */
 
 import fetch from 'whatwg-fetch';
+// include and initialize the rollbar library with your access token
+var Rollbar = require("rollbar");
+var rollbar = new Rollbar({
+  accessToken: '0a3d44efedcb429dbe427acd2f79f752',
+  captureUncaught: true,
+  captureUnhandledRejections: true
+});
+
+// record a generic message and send it to Rollbar
+rollbar.log("Hi, this is Ollie's Error Handler.");
