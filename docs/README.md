@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/VirtuallyCreative/Ollie.svg?branch=master)](https://travis-ci.org/VirtuallyCreative/Ollie)
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/t3wv39owatkxpx9m?svg=true)](https://ci.appveyor.com/project/vip3rousmango/ollie)
-[![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://virtuallycreative.gitbook.io/ollie-framework/)
+[![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://virtuallycreative.gitbook.io/ollie-framework/v/docs/)
 <br>
 [![GitHub issues](https://img.shields.io/github/issues/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/Ollie/issues)
 [![GitHub forks](https://img.shields.io/github/forks/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/Ollie/network)
@@ -18,7 +18,7 @@
 
 Ollie is an opinionated boilerplate for creating rapid Single Page Application wireframes and microsites. It uses the [AresJS](https://#) and [Allegretto](https://allegretto.herokuapp.com/) micro-libraries as well as the latest JS tooling to help rapidly scaffold your app.
 
-You can think of this as a light HTML5 + Bootstrap + jQuery style boilerplate but, decisions on what to use under the hood have already been decided.
+You can think of this as a HTML5 + Bootstrap + jQuery style boilerplate but, decisions on what to use under the hood have already been decided.
 
 Ollie sets some environment standards (EditorConfig) and handles scaffolding the build (Webpack), linting (ESLint), testing (Mocha/Chai, CI) and deployment (Webpack again) processes as well as providing mockable HTTP and API (Express) requests to use during development.
 
@@ -80,8 +80,7 @@ Ollie sets some environment standards (EditorConfig) and handles scaffolding the
 | open                        | Open app in default browser                                                                               |
 | rimraf                      | Delete files                                                                                              |
 | style-loader                | Add Style support to Webpack                                                                              |
-| supertest                   | Mock HTTP requests
-    |
+| supertest                   | Mock HTTP requests                                                                                        |
 | webpack                     | Bundler with plugin system and integrated development server                                              |
 | webpack-dev-middleware      | Adds middleware support to webpack                                                                        |
 | webpack-hot-middleware      | Adds hot reloading to webpack                                                                             |
@@ -96,22 +95,6 @@ Tests should be inside of a *.test.js file and local to the .js file it tests.
 * [JSDOM](https://github.com/jsdom/jsdom) - ShadowDOM for use with Chai
 * [TravisCI](https://travis-ci.org/VirtuallyCreative/Ollie) - Linux CI testing
 * [Appveyor](https://ci.appveyor.com/project/vip3rousmango/ollie) - Windows CI testing
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
