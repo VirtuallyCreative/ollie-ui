@@ -1,6 +1,6 @@
 # Ollie
 
-[![Build Status](https://travis-ci.org/VirtuallyCreative/Ollie.svg?branch=master)](https://travis-ci.org/VirtuallyCreative/Ollie)
+[![Build Status](https://travis-ci.org/VirtuallyCreative/ollie-ui.svg?branch=master)](https://travis-ci.org/VirtuallyCreative/ollie-ui)
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/t3wv39owatkxpx9m?svg=true)](https://ci.appveyor.com/project/vip3rousmango/ollie)
 [![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://virtuallycreative.gitbook.io/ollie-framework/v/docs/)
 <br>
