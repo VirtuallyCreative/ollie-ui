@@ -2,12 +2,12 @@
 
 [![Build Status](https://travis-ci.org/VirtuallyCreative/ollie-ui.svg?branch=master)](https://travis-ci.org/VirtuallyCreative/ollie-ui)
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/t3wv39owatkxpx9m?svg=true)](https://ci.appveyor.com/project/vip3rousmango/ollie)
-[![GitHub issues](https://img.shields.io/github/issues/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/Ollie/issues)
-[![GitHub forks](https://img.shields.io/github/forks/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/Ollie/network)
-[![GitHub stars](https://img.shields.io/github/stars/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/Ollie/stargazers)
-[![GitHub license](https://img.shields.io/github/license/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/Ollie)
+[![GitHub issues](https://img.shields.io/github/issues/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/ollie-ui/issues)
+[![GitHub forks](https://img.shields.io/github/forks/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/ollie-ui/network)
+[![GitHub stars](https://img.shields.io/github/stars/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/ollie-ui/stargazers)
+[![GitHub license](https://img.shields.io/github/license/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/ollie-ui)
 <br>
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/VirtuallyCreative/Ollie.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FVirtuallyCreative%2FOllie)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/VirtuallyCreative/ollie-ui.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FVirtuallyCreative%2Follie-ui)
 
 Ollie is an opinionated boilerplate for creating rapid Single Page Application wireframes and microsites. It uses the [AresJS](https://#) and [Allegretto](https://allegretto.herokuapp.com/) micro-libraries as well as the latest JS tooling to help rapidly scaffold your app prototype.
 
