@@ -42,7 +42,7 @@ already be a variety of starter kits or boilerplates available for you to use al
 
 You might be wondering what belongs in your team's JavaScript starter kit.
 
-Here's just a few items that should belong in all JS starter kits - and as such are already taken care of in Ollie, 
+Here's just a few items that should belong in all JS starter kits - and as such are already taken care of in Ollie,
 
 - package management,
 - bundling,
