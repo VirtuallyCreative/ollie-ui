@@ -38,11 +38,11 @@ there's no right answer on this continuum. But the less opinions that your curre
 Of course, depending on the library or framework you're working with, there may
 already be a variety of starter kits or boilerplates available for you to use already.
 
-## What belongs in a starter kit
+## What Ollie provides as a starter kit
 
-You might be wondering what belongs in your team's JavaScript starter kit. 
+You might be wondering what belongs in your team's JavaScript starter kit.
 
-Here's just a few items that should belong in all JS starter kits, 
+Here's just a few items that should belong in all JS starter kits - and as such are already taken care of in Ollie, 
 
 - package management,
 - bundling,
