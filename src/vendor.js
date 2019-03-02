@@ -15,5 +15,3 @@
 /* eslint-disable no-unused-vars */
 
 import fetch from 'whatwg-fetch';
-// include and initialize the rollbar library with your access token
-import Rollbar from 'rollbar';
