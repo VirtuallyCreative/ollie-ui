@@ -2,29 +2,27 @@
 
 [![Build Status](https://travis-ci.org/VirtuallyCreative/ollie-ui.svg?branch=master)](https://travis-ci.org/VirtuallyCreative/ollie-ui)
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/t3wv39owatkxpx9m?svg=true)](https://ci.appveyor.com/project/vip3rousmango/ollie)
-[![GitHub issues](https://img.shields.io/github/issues/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/ollie-ui/issues)
-[![GitHub forks](https://img.shields.io/github/forks/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/ollie-ui/network)
-[![GitHub stars](https://img.shields.io/github/stars/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/ollie-ui/stargazers)
-[![GitHub license](https://img.shields.io/github/license/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/ollie-ui)
-<br>
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/VirtuallyCreative/ollie-ui.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FVirtuallyCreative%2Follie-ui)
+[![GitHub issues](https://img.shields.io/github/issues/VirtuallyCreative/ollie-ui.svg)](https://github.com/VirtuallyCreative/ollie-ui/issues)
+[![GitHub forks](https://img.shields.io/github/forks/VirtuallyCreative/ollie-ui.svg)](https://github.com/VirtuallyCreative/ollie-ui/network)
+[![GitHub stars](https://img.shields.io/github/stars/VirtuallyCreative/ollie-ui.svg)](https://github.com/VirtuallyCreative/ollie-ui/stargazers)
+[![GitHub license](https://img.shields.io/github/license/VirtuallyCreative/ollie-ui.svg)](https://github.com/VirtuallyCreative/ollie-ui)
 
-Ollie is an opinionated boilerplate for creating rapid Single Page Application wireframes and microsites. It uses the [AresJS](https://#) and [Allegretto](https://allegretto.herokuapp.com/) micro-libraries as well as the latest JS tooling to help rapidly scaffold your app prototype.
+Ollie is an opinionated boilerplate for creating rapid Single Page Applications or microsites typically in the prototype/wireframe phases. It uses the [AresJS](https://#) and [Allegretto CSS](https://allegretto.herokuapp.com/) micro-frameworks as well as the latest JS tooling to help rapidly scaffold your app prototype.
 
-You can think of this as a boilerplate or starter kit but, decisions on what to use under the hood have already been decided for you. The menu on the left outlines the decisions made inside the Ollie-UI Framework.
-
-Ollie sets some environment standards (.editorconfig) and handles scaffolding the build (Webpack), linting (ESLint), testing (Mocha/Chai, CI) and deployment (Webpack again) processes as well as providing mockable HTTP and API (Express) requests for use during development.
+You can think of this as a boilerplate or starter kit but, decisions on what to use under the hood have already been decided for you. The menu on the left outlines the decisions made inside the Ollie-UI Framework and why specific choices were made.
 
 ## Get Started
 
 1. **Install [Node 6 or newer](https://nodejs.org)**. Need to run multiple versions of Node? Use [nvm](https://github.com/creationix/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
-2. **Clone this repository.** - `git clone https://github.com/VirtuallyCreative/ollie-ui.git` or [download the zip](https://github.com/VirtuallyCreative/ollie-ui/archive/master.zip)
-3. **Make sure you're in the directory you just created.** - `cd ollie-ui`
+2. **Clone this repository.** - `git clone https://github.com/VirtuallyCreative/ollie-ui.git my-new-app` or [download the zip](https://github.com/VirtuallyCreative/ollie-ui/archive/master.zip)
+3. **Make sure you're in the directory you just created.** - `cd my-new-app`
 4. **Install Node Packages.** - `npm install`
 5. **Run the app.** - `npm start -s`
    This will run the automated build process, start up a webserver, and open the application in your default browser. When doing development with this kit, this command will continue watching files all your files. Every time you hit save the code is rebuilt, linting runs, and tests run automatically. Note: The -s flag is optional. It enables silent mode which suppresses unnecessary messages during the build.
 
 ### Development Dependencies
+
+This might feel heavy at first glance but there is a reason for each of these and projects start slim but quickly balloon in size so, this pre-set is a solid core to handle most end-to-end app prototyping needs.
 
 | **Dependency**              | **Use**                                                                                                   |
 | --------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -71,9 +69,9 @@ Tests should be inside of a *.test.js file and local to the .js file it tests.
 * [TravisCI](https://travis-ci.org/VirtuallyCreative/Ollie) - Linux CI testing
 * [Appveyor](https://ci.appveyor.com/project/vip3rousmango/ollie) - Windows CI testing
 
-## Deployment
+## Ollie Under the Hood
 
-Webpack is responsible for several operations during the build process.
+App deployment is handled by Webpack and is responsible for several operations during the build process - with almost all of this pre-configured out of the box.
 
 * Devel­op­ment / Pro­duc­tion — Sep­a­rate dev and prod con­figs & builds. Local devel­op­ment means fast builds via the in-mem­o­ry web­pack-dev-serv­er, and for pro­duc­tion builds every pos­si­ble opti­miza­tion needs to be utilized, making for slower builds at the gain of better optimizations.
 
@@ -97,6 +95,28 @@ Webpack is responsible for several operations during the build process.
 
 * Auto­mat­ic .webp Cre­ation — Chrome, Edge, and Fire­fox all are sup­port­ing .webp, and can signifigantly boost performance.
 
+## NPM Scripts
+
+Out of the box NPM tooling for Ollie,
+
+- prestart
+- start
+- open:src
+- lint
+- lint:watch
+- localtunnel
+- share
+- test
+- test:watch
+- generate-mock-data
+- prestart-mockapi
+- start-mockapi
+- clean-dist
+- prebuild
+- build
+- postbuild
+- deploy
+
 ## HTTP & API
 
 Ollie uses a centralized API which configures all calls, handles pre-loader logic and also errors.
@@ -112,13 +132,14 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/VirtuallyCreative/Ollie/tags).
+Ollie uses [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/VirtuallyCreative/Ollie/tags).
 
 ## Authors
 
 * **Al Romano** - *Initial work* - [Virtually(Creative)](https://github.com/VirtuallyCreative)
 
-See also the list of [contributors](https://github.com/VirtuallyCreative/Ollie/contributors) who participated in this project.
+See the list of [contributors](https://github.com/VirtuallyCreative/Ollie/contributors) who participated in this project.
+See the list of [sponsors from Patreon]() who help support the Ollie Framework.
 
 ## License
 

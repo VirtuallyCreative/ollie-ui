@@ -3,18 +3,17 @@
 [![Build Status](https://travis-ci.org/VirtuallyCreative/ollie-ui.svg?branch=master)](https://travis-ci.org/VirtuallyCreative/ollie-ui)
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/t3wv39owatkxpx9m?svg=true)](https://ci.appveyor.com/project/vip3rousmango/ollie)
 [![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://virtuallycreative.gitbook.io/ollie-framework/)
-<br>
-[![GitHub issues](https://img.shields.io/github/issues/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/Ollie/issues)
-[![GitHub forks](https://img.shields.io/github/forks/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/Ollie/network)
-[![GitHub stars](https://img.shields.io/github/stars/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/Ollie/stargazers)
-[![GitHub license](https://img.shields.io/github/license/VirtuallyCreative/Ollie.svg)](https://github.com/VirtuallyCreative/Ollie)
+[![GitHub issues](https://img.shields.io/github/issues/VirtuallyCreative/ollie-ui.svg)](https://github.com/VirtuallyCreative/ollie-ui/issues)
+[![GitHub forks](https://img.shields.io/github/forks/VirtuallyCreative/ollie-ui.svg)](https://github.com/VirtuallyCreative/ollie-ui/network)
+[![GitHub stars](https://img.shields.io/github/stars/VirtuallyCreative/ollie-ui.svg)](https://github.com/VirtuallyCreative/ollie-ui/stargazers)
+[![GitHub license](https://img.shields.io/github/license/VirtuallyCreative/ollie-ui.svg)](https://github.com/VirtuallyCreative/ollie-ui)
 <br>
 <!--
 ![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/react.svg)
 ![David](https://img.shields.io/david/VirtuallyCreative/Ollie.svg)
 ![node](https://img.shields.io/node/v/Ollie.svg)
 -->
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/VirtuallyCreative/Ollie.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FVirtuallyCreative%2FOllie)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/VirtuallyCreative/ollie-ui.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FVirtuallyCreative%2Follie-ui)
 
 Ollie is an opinionated boilerplate for creating rapid Single Page Application wireframes and microsites. It uses the [AresJS](https://#) and [Allegretto](https://allegretto.herokuapp.com/) micro-libraries as well as the latest JS tooling to help rapidly scaffold your app.
 
@@ -31,9 +30,9 @@ Ollie sets some environment standards (EditorConfig) and handles scaffolding the
 
 ## Get Started
 
-1. **Install [Node 6 or newer](https://nodejs.org)**. Need to run multiple versions of Node? Use [nvm](https://github.com/creationix/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
-2. **Clone this repository.** - `git clone https://github.com/VirtuallyCreative/ollie-ui.git` or [download the zip](https://github.com/VirtuallyCreative/ollie-ui/archive/master.zip)
-3. **Make sure you're in the directory you just created.** - `cd ollie-ui`
+1. **Install [Node 8 or newer](https://nodejs.org)**. Need to run multiple versions of Node? Use [nvm](https://github.com/creationix/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
+2. **Clone this repository.** - `git clone https://github.com/VirtuallyCreative/ollie-ui.git my-new-app` or [download the zip](https://github.com/VirtuallyCreative/ollie-ui/archive/master.zip)
+3. **Make sure you're in the directory you just created.** - `cd my-new-app`
 4. **Install Node Packages.** - `npm install`
 5. **Run the app.** - `npm start -s`
    This will run the automated build process, start up a webserver, and open the application in your default browser. When doing development with this kit, this command will continue watching files all your files. Every time you hit save the code is rebuilt, linting runs, and tests run automatically. Note: The -s flag is optional. It enables silent mode which suppresses unnecessary messages during the build.
@@ -97,25 +96,9 @@ Tests should be inside of a *.test.js file and local to the .js file it tests.
 * [TravisCI](https://travis-ci.org/VirtuallyCreative/Ollie) - Linux CI testing
 * [Appveyor](https://ci.appveyor.com/project/vip3rousmango/ollie) - Windows CI testing
 
-### Break down into end to end tests
+## Ollie-UI Features
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Webpack is responsible for several operations during the build process.
+A lot of heavy lifting is done using Webpack and it's responsible for several operations during the build process.
 
 * Devel­op­ment / Pro­duc­tion — Sep­a­rate dev and prod con­figs & builds. Local devel­op­ment means fast builds via the in-mem­o­ry web­pack-dev-serv­er, and for pro­duc­tion builds every pos­si­ble opti­miza­tion needs to be utilized, making for slower builds at the gain of better optimizations.
 
@@ -138,15 +121,6 @@ Webpack is responsible for several operations during the build process.
 * Image Opti­miza­tion — Opti­mize them via auto­mat­ed tools like mozjpeg, optipng, svgo, etc for next step...
 
 * Auto­mat­ic .webp Cre­ation — Chrome, Edge, and Fire­fox all are sup­port­ing .webp, and can signifigantly boost performance.
-
-## HTTP & API
-
-Ollie uses a centralized API which configures all calls, handles pre-loader logic and also errors.
-
-## Also featuring ...
-
-* [Allegretto](https://allegretto.herokuapp.com/) - Lightweight CSS Framework
-* [AresJS](https://aresjs.herokuapp.com) - Micro JS Framework
 
 ## Contributing
 
