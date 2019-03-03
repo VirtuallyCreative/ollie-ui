@@ -5,10 +5,10 @@ days, but these are the two that I recommend considering.
 
 These editors offer many, if not all the benefits that I listed previously.
 
-WebStorm is currently one of the best editors available, however it's also
+[WebStorm](https://www.jetbrains.com/webstorm/) is currently one of the best editors available, however it's also
 the only option on this list that isn't free, but it does offer a free 30-day trial.
 
-At Virtually(Creative) we use VSCode because it's free,
+At Virtually(Creative) we use [Visual Studio Code](https://code.visualstudio.com) because it's free,
 it's fast, it offers a built-in terminal, it has
 excellent Git integration and node debugging, and it
 boasts a rich plug-in ecosystem.
