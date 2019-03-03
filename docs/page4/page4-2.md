@@ -1,20 +1,21 @@
 # Sharing work-in-progress
 
-When sharing W.I.P applications Ollie strives to be simple so why not just put the app on a traditional cloud provider like AWS or Azure?
+When sharing W.I.P applications Ollie strives to be simple.
 
-The answer is, you absolutely could. Override the `build`, `prebuild`, or `postbuild` scripts or add more for even more options like automated deployment to Azure App Service.
+So, why not just put the app on a traditional cloud provider like AWS, Azure, Google Cloud, Heroku, Netlify, DigialOcean, etc...?
 
-But Ollie doesn't. 
+The answer is, you absolutely could. It's just not baked into Ollie - yet. It's on the [Roadmap](https://github.com/VirtuallyCreative/ollie-ui/projects/2).
 
-Why doesn't Ollie have that out of the box? 
+Why doesn't Ollie have that out of the box?
 
 **Sharing work-in-progress should be fast - really fast, and free.**
 
-Ollie likes free.
+Ollie likes free - so it uses some quick and easy options to get your work-in-progress up fast.
+Think of this as *before* going onto any cloud surface that could start charging money.
 
 ## Localtunnel
 
-Localtunnel offers an elegant way to expose your local host via a public url. It punches a hole in your firewall so that your local machine can operate as a web server. The nice thing about localtunnel is how easy it is to get started. You install the localtunnel npm package globally, and then any time you want to expose your work to the public web, you start up your app and then type something like this: `npm run share`.
+[Localtunnel](https://www.npmjs.com/package/localtunnel) offers an elegant way to expose your local host via a public url. It punches a hole in your firewall so that your local machine can operate as a web server. The nice thing about localtunnel is how easy it is to get started. You install the localtunnel npm package globally, and then any time you want to expose your work to the public web, you start up your app and then type something like this: `npm run share`.
 
 That opens the `src` directory in your browser ready to share (copy/paste the URL) fast and with no configurations needed.
 

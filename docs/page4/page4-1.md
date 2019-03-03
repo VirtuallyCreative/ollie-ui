@@ -17,7 +17,9 @@ app.get('/', function mainHandler(req, res) {
 app.listen(port, function(err) {
     if (err) {
         console.log(err) // eslint-disable-line no-console
-        // rollbar.critical("Critical Error Caught: ", err) // rollbar.com error tracking
+
+        // Rollbar.com Error Tracking, uncomment to enable
+        // rollbar.critical("Critical Error Caught: ", err)
     } else {
         open('http://localhost:' + port)
     }
