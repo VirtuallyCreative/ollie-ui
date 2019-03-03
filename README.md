@@ -14,19 +14,19 @@
 ![node](https://img.shields.io/node/v/Ollie.svg)
 -->
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/VirtuallyCreative/ollie-ui.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FVirtuallyCreative%2Follie-ui)
+[![Patreon Support](https://img.shields.io/badge/Patreon%20Support-Help%20Ollie%20get%20better-orange.svg)](https://www.patreon.com/preview/2c04ab8f423140269d46d535e6bb7134)
 
 Ollie is an opinionated boilerplate for creating rapid Single Page Application wireframes and microsites. It uses the [AresJS](https://#) and [Allegretto](https://allegretto.herokuapp.com/) micro-libraries as well as the latest JS tooling to help rapidly scaffold your app.
 
-You can think of this as a light HTML5 + Bootstrap + jQuery style boilerplate but, decisions on what to use under the hood have already been decided.
+You can think of this as a lightweight HTML single-page boilerplate served using a basic Express route because, decisions.
 
-Ollie sets some environment standards (EditorConfig) and handles scaffolding the build (Webpack), linting (ESLint), testing (Mocha/Chai, CI) and deployment (Webpack again) processes as well as providing mockable HTTP and API (Express) requests to use during development.
+Ollie sets some environment standards (EditorConfig) and handles scaffolding the build (Webpack), linting (ESLint), testing (Mocha/Chai, CI) and deployment (Webpack again) processes as well as providing mockable HTTP and API (Express) requests to use *during development*.
 
 ## Ecosystem
 
 | Project | Status | Description |
 |---------|--------|-------------|
 | [Allegretto](https://github.com/VirtuallyCreative/allegretto)          | [![Build Status](https://travis-ci.org/VirtuallyCreative/allegretto.svg?branch=master)](https://travis-ci.org/VirtuallyCreative/allegretto) | Lightweight CSS Framework |
-| [AresJS](https://github.com/VirtuallyCreative/aresJS)              | [![Build Status](https://travis-ci.org/VirtuallyCreative/aresJS.svg?branch=master)](https://travis-ci.org/VirtuallyCreative/aresJS) | Micro Javascript Framework |
 
 ## Get Started
 
@@ -79,8 +79,7 @@ Ollie sets some environment standards (EditorConfig) and handles scaffolding the
 | open                        | Open app in default browser                                                                               |
 | rimraf                      | Delete files                                                                                              |
 | style-loader                | Add Style support to Webpack                                                                              |
-| supertest                   | Mock HTTP requests
-  |
+| supertest                   | Mock HTTP requests                                                                                        |
 | webpack                     | Bundler with plugin system and integrated development server                                              |
 | webpack-dev-middleware      | Adds middleware support to webpack                                                                        |
 | webpack-hot-middleware      | Adds hot reloading to webpack                                                                             |
