@@ -1,16 +1,17 @@
 # .editorconfig
 
-Here's the editor config that I typically use. Yes, I'm choosing tabs, but hey, if you prefer spaces, we can still be friends, I guess...
+Here's the editor config that I typically use.
+Yes, I'm choosing spaces, but hey, if you prefer tabs, we can still be friends, I guess...
 
 Unless you start preaching to me.
 
 ## Config Setup
 
-```
+```conf
 root = true
 
 [*]
-indent_style = tab
+indent_style = space
 indent_size = 4
 end_of_line = lf
 charset = utf-8
