@@ -28,11 +28,6 @@ friction to get set up.
 Surge assumes that your app is just static `.html`, `.javascript`, and `.css` files. Surge only supports static files. But the upside is extreme
 simplicity. You don't have to punch a hole in your firewall to expose your work. Instead you can quickly move your static files up to their public web server.
 
-Surge publishes your static files to their service and then serves them at a public url. The process for getting started really couldn't be simpler. First you
-install Surge globally and then you type surge in your project directory. Now, the first time you run Surge you will be prompted to provide an email and password
-on the command line. Otherwise it will list your existing login and confirm the path that you'd like to serve. When you hit enter to accept a randomly generated
-url, it will upload your app and expose it on the url listed. Easy as that.
-
 If you want to use Surge as a more permanent host, you can even use your own domain name. So with that approach, Surge becomes an easy way to do automated deployments via the command line - something covered in the Production Deployment section.
 
 ## Browsersync
