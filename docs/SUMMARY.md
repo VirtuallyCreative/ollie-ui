@@ -15,7 +15,7 @@
 ## Package Management
 
 * [Package Management](page3/README.md)
-    * [NPM & YARN](page3/page3-1.md)
+    * [NPM Scripts](page3/page3-1.md)
     * [Package Security](page3/page3-2.md)
 
 ## Development Server
