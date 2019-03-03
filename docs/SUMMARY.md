@@ -1,6 +1,8 @@
-# Summary
+# Documentation
 
-  * [Ecosystem](page0/README.md)
+## Summary
+
+* [Ecosystem](page0/README.md)
   * [Features Roadmap](page0/page0-1.md)
   * [Contributing](page0/page0-2.md)
 
@@ -119,3 +121,11 @@
 * [Separating UI & API](page14/README.md)
   * [Hosting API - Heroku](page14/page14-1.md)
   * [Hosting UI - Surge.sh](page14/page14-2.md)
+
+## Cloud Hosting Deployments
+
+* [Deploying to the Cloud](page15/README.md)
+  * [Deploying to Azure App Service](page15/page15-1.md)
+  * [Deploying to Netlify](page15/page15-2.md)
+  * [Deploying to DigitalOcean](page15/page15-3.md)
+  * [Deploying to Amazon Web Services](page15/page15-4.md)
