@@ -33,8 +33,11 @@ Changes that are cosmetic in nature and do not add anything substantial to the s
 
 #### Thank you
 
-The Ollie Framework is a solo effort.
-Pitch in and [buy me a coffee](https://www.patreon.com/preview/2c04ab8f423140269d46d535e6bb7134), Ollie loves coffee!
+The Ollie Framework, for now, is a solo effort.
+
+Feel free to Contribute or, pitch in and [buy me a coffee](https://www.patreon.com/preview/2c04ab8f423140269d46d535e6bb7134).
+
+Ollie loves coffee.
 
 Thank You!
 
