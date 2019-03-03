@@ -1,10 +1,14 @@
 # Sharing work-in-progress
 
-Why not just put the app on a traditional cloud provider like AWS or Azure?
+When sharing W.I.P applications Ollie strives to be simple so why not just put the app on a traditional cloud provider like AWS or Azure?
 
 The answer is, you absolutely could. Override the `build`, `prebuild`, or `postbuild` scripts or add more for even more options like automated deployment to Azure App Service.
 
-So, why doesn't Ollie have that out of the box? Sharing work-in-progress should be fast - really fast, and free. 
+But Ollie doesn't. 
+
+Why doesn't Ollie have that out of the box? 
+
+**Sharing work-in-progress should be fast - really fast, and free.**
 
 Ollie likes free.
 

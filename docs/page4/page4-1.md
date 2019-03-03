@@ -1,8 +1,6 @@
 # ExpressJS
 
-Even though we just talked about 6 development servers Ollie is about making choices so, Express wins as the development web server because it's powerful, highly configurable, and extremely popular making support much easier to find.
-
-Ollie keeps all build-related tools in a single folder called `build` in the root of the project.
+Ollie has a very minimal Express setup. Ollie keeps all build-related tools in a single folder called `build` in the root of the project.
 
 Inside, `srcServer.js` which holds all the config information for the development server, `distServer.js` holds all the production build config options.
 
