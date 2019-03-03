@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/VirtuallyCreative/ollie-ui.svg?branch=master)](https://travis-ci.org/VirtuallyCreative/ollie-ui)
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/t3wv39owatkxpx9m?svg=true)](https://ci.appveyor.com/project/vip3rousmango/ollie)
-[![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://virtuallycreative.gitbook.io/ollie-framework/)
 [![GitHub issues](https://img.shields.io/github/issues/VirtuallyCreative/ollie-ui.svg)](https://github.com/VirtuallyCreative/ollie-ui/issues)
 [![GitHub forks](https://img.shields.io/github/forks/VirtuallyCreative/ollie-ui.svg)](https://github.com/VirtuallyCreative/ollie-ui/network)
 [![GitHub stars](https://img.shields.io/github/stars/VirtuallyCreative/ollie-ui.svg)](https://github.com/VirtuallyCreative/ollie-ui/stargazers)
@@ -13,93 +12,20 @@
 ![David](https://img.shields.io/david/VirtuallyCreative/Ollie.svg)
 ![node](https://img.shields.io/node/v/Ollie.svg)
 -->
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/VirtuallyCreative/ollie-ui.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FVirtuallyCreative%2Follie-ui)
+<br>
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/VirtuallyCreative/Ollie.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FVirtuallyCreative%2Follie-ui)
 [![Patreon Support](https://img.shields.io/badge/Patreon%20Support-Help%20Ollie%20get%20better-orange.svg)](https://www.patreon.com/preview/2c04ab8f423140269d46d535e6bb7134)
 
-Ollie is an opinionated boilerplate for creating rapid Single Page Application wireframes and microsites. It uses the [AresJS](https://#) and [Allegretto](https://allegretto.herokuapp.com/) micro-libraries as well as the latest JS tooling to help rapidly scaffold your app.
+Ollie is an opinionated boilerplate for creating rapid Single Page Application wireframes and microsites.
 
-You can think of this as a lightweight HTML single-page boilerplate served using a basic Express route because, decisions.
+To learn more check out the Docs, [![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://virtuallycreative.gitbook.io/ollie-framework/v/docs/)
 
-Ollie sets some environment standards (EditorConfig) and handles scaffolding the build (Webpack), linting (ESLint), testing (Mocha/Chai, CI) and deployment (Webpack again) processes as well as providing mockable HTTP and API (Express) requests to use *during development*.
+## Why Ollie
 
-## Ecosystem
+Lots of decisions can go into a boilerplate - so after making these decisions over and over they're now baked into a Stater Kit. 
+Some of the things out of the box are,
 
-| Project | Status | Description |
-|---------|--------|-------------|
-| [Allegretto](https://github.com/VirtuallyCreative/allegretto)          | [![Build Status](https://travis-ci.org/VirtuallyCreative/allegretto.svg?branch=master)](https://travis-ci.org/VirtuallyCreative/allegretto) | Lightweight CSS Framework |
-
-## Get Started
-
-1. **Install [Node 8 or newer](https://nodejs.org)**. Need to run multiple versions of Node? Use [nvm](https://github.com/creationix/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
-2. **Clone this repository.** - `git clone https://github.com/VirtuallyCreative/ollie-ui.git my-new-app` or [download the zip](https://github.com/VirtuallyCreative/ollie-ui/archive/master.zip)
-3. **Make sure you're in the directory you just created.** - `cd my-new-app`
-4. **Install Node Packages.** - `npm install`
-5. **Run the app.** - `npm start -s`
-   This will run the automated build process, start up a webserver, and open the application in your default browser. When doing development with this kit, this command will continue watching files all your files. Every time you hit save the code is rebuilt, linting runs, and tests run automatically. Note: The -s flag is optional. It enables silent mode which suppresses unnecessary messages during the build.
-6. Having issues? See below.
-
-## Having Issues? Try these things first:
-
-1. Run `npm install` - If you forget to do this, you'll see this: `babel-node: command not found`.
-2. Try running the latest version of Node.
-3. Make sure files with names that begin with a dot (.babelrc, .editorconfig, .eslintrc) are copied to the project directory root. This is easy to overlook if you copy this repository manually.
-4. Don't run the project from a symbolic link. It will cause issues with file watches.
-5. Having linting issues? Delete any .eslintrc that you're storing in your user directory. Also, disable any ESLint plugin / custom rules that you've enabled within your editor. These will conflict with the ESLint rules defined in the course.
-6. Seeing `Error: listen EADDRINUSE :::3000`? That means port 3000 is already in use on your machine. You probably have another instance of this project running on your machine in a different window. So find that window and kill the other instance using Ctrl+C.
-7. Nothing above work? Delete your node_modules folder and re-run npm install.
-
-### Development Dependencies
-
-| **Dependency**              | **Use**                                                                                                   |
-| --------------------------- | --------------------------------------------------------------------------------------------------------- |
-| babel-cli                   | Babel Command line interface                                                                              |
-| babel-core                  | Babel Core for transpiling the new JavaScript to old                                                      |
-| babel-loader                | Adds Babel support to Webpack                                                                             |
-| babel-preset-latest         | Babel preset for running all the latest standardized JavaScript features                                  |
-| babel-register              | Register Babel to transpile our Mocha tests                                                               |
-| chai                        | Assertion library                                                                                         |
-| chalk                       | Colored command line output                                                                               |
-| cheerio                     | Supports querying DOM with jQuery like syntax - Useful in testing and build process for HTML manipulation |
-| compression                 | gzip http output                                                                                          |
-| cross-env                   | Cross-environment friendly way to handle environment variables                                            |
-| css-loader                  | Add CSS support to Webpack                                                                                |
-| eslint                      | Lints JavaScript                                                                                          |
-| eslint-plugin-import        | Advanced linting of ES6 imports                                                                           |
-| eslint-watch                | Add watch functionality to ESLint                                                                         |
-| express                     | Serves development and production builds                                                                  |
-| extract-text-webpack-plugin | Extracts CSS into separate file for production build                                                      |
-| html-webpack-plugin         | Generate HTML file programatically via Webpack                                                            |
-| jsdom                       | In-memory DOM for testing                                                                                 |
-| json-schema-faker           | Declare a JSON schema for generating fake data                                                            |
-| json-server                 | Serve a JSON API locally                                                                                  |
-| localtunnel                 | Create a tunnel to your local machine                                                                     |
-| mocha                       | JavaScript testing library                                                                                |
-| npm-run-all                 | Display results of multiple commands on single command line                                               |
-| numeral                     | Library for working with numbers                                                                          |
-| open                        | Open app in default browser                                                                               |
-| rimraf                      | Delete files                                                                                              |
-| style-loader                | Add Style support to Webpack                                                                              |
-| supertest                   | Mock HTTP requests                                                                                        |
-| webpack                     | Bundler with plugin system and integrated development server                                              |
-| webpack-dev-middleware      | Adds middleware support to webpack                                                                        |
-| webpack-hot-middleware      | Adds hot reloading to webpack                                                                             |
-| webpack-md5-hash            | Used to hash files generated by Webpack using MD5 so that their names change when the content changes     |
-
-## Creating & Running tests
-
-Tests should be inside of a *.test.js file and local to the .js file it tests.
-
-* [Mocha](https://mochajs.org/#getting-started) - Testing framework
-* [Chai](https://www.chaijs.com/guide/styles/) - Assertion Library
-* [JSDOM](https://github.com/jsdom/jsdom) - ShadowDOM for use with Chai
-* [TravisCI](https://travis-ci.org/VirtuallyCreative/Ollie) - Linux CI testing
-* [Appveyor](https://ci.appveyor.com/project/vip3rousmango/ollie) - Windows CI testing
-
-## Ollie-UI Features
-
-A lot of heavy lifting is done using Webpack and it's responsible for several operations during the build process.
-
-* Devel­op­ment / Pro­duc­tion — Sep­a­rate dev and prod con­figs & builds. Local devel­op­ment means fast builds via the in-mem­o­ry web­pack-dev-serv­er, and for pro­duc­tion builds every pos­si­ble opti­miza­tion needs to be utilized, making for slower builds at the gain of better optimizations.
+* Webpack Devel­op­ment / Pro­duc­tion — Sep­a­rate dev and prod con­figs & builds. Local devel­op­ment means fast builds via the in-mem­o­ry web­pack-dev-serv­er, and for pro­duc­tion builds every pos­si­ble opti­miza­tion needs to be utilized, making for slower builds at the gain of better optimizations.
 
 * Hot Mod­ule Replace­ment — as changes are made to JavaScript, CSS, or tem­plates, the web­page seam­less­ly refreshes.
 
@@ -120,6 +46,41 @@ A lot of heavy lifting is done using Webpack and it's responsible for several op
 * Image Opti­miza­tion — Opti­mize them via auto­mat­ed tools like mozjpeg, optipng, svgo, etc for next step...
 
 * Auto­mat­ic .webp Cre­ation — Chrome, Edge, and Fire­fox all are sup­port­ing .webp, and can signifigantly boost performance.
+
+## HTTP & API
+
+Ollie uses a Express, with a centralized API approach which configures all calls, handles pre-loader logic and also errors.
+
+To learn more check out the Docs, [![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://virtuallycreative.gitbook.io/ollie-framework/v/docs/development-server/page4/page4-1)
+
+## Ecosystem
+
+Added in a light-weight frameworks to help scaffold CSS. You can easily swap it for whatever front-end framework you wish.
+Its referenced in the `<head>` tag in `/src/index.ejs`.
+
+```html
+  <!-- Load Allegretto from CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/allegretto@latest/dist/retto.min.css" type="text/css" media="all">
+```
+
+| Project | Status | Description |
+|---------|--------|-------------|
+| [Allegretto](https://github.com/VirtuallyCreative/allegretto)          | [![Build Status](https://travis-ci.org/VirtuallyCreative/allegretto.svg?branch=master)](https://travis-ci.org/VirtuallyCreative/allegretto) | Lightweight CSS Framework |
+
+To learn more check out the Docs, [![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://virtuallycreative.gitbook.io/ollie-framework/v/docs/package-management/page3/page3-2)
+
+## Get Started
+
+1. **Install [Node 6 or newer](https://nodejs.org)**. Need to run multiple versions of Node? Use [nvm](https://github.com/creationix/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
+2. **Clone this repository.** - `git clone https://github.com/VirtuallyCreative/ollie-ui.git` or [download the zip](https://github.com/VirtuallyCreative/ollie-ui/archive/master.zip)
+3. **Make sure you're in the directory you just created.** - `cd ollie-ui`
+4. **Install Node Packages.** - `npm install`
+5. **Run the app.** - `npm start -s`
+   This will run the automated build process, start up a webserver, and open the application in your default browser. When doing development with this kit, this command will continue watching files all your files. Every time you hit save the code is rebuilt, linting runs, and tests run automatically. Note: The -s flag is optional. It enables silent mode which suppresses unnecessary messages during the build.
+
+## Also featuring
+
+* [Allegretto](https://allegretto.herokuapp.com/) - Lightweight CSS Framework
 
 ## Contributing
 
