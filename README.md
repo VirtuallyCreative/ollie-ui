@@ -13,9 +13,8 @@
 ![node](https://img.shields.io/node/v/Ollie.svg)
 -->
 <br>
-[![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://virtuallycreative.gitbook.io/ollie-framework/v/docs/)
-<br>
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/VirtuallyCreative/Ollie.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FVirtuallyCreative%2Follie-ui)
+[![Patreon Support](https://img.shields.io/badge/Patreon%20Support-Help%20Ollie%20get%20better-orange.svg)](https://www.patreon.com/preview/2c04ab8f423140269d46d535e6bb7134)
 
 Ollie is an opinionated boilerplate for creating rapid Single Page Application wireframes and microsites.
 
@@ -23,9 +22,10 @@ To learn more check out the Docs, [![GitBook](https://img.shields.io/badge/docs-
 
 ## Why Ollie
 
-Lots of decisions can go into a boilerplate - so after making these decisions over and over they're now baked into a Stater Kit. Some of the things out of the box are,
+Lots of decisions can go into a boilerplate - so after making these decisions over and over they're now baked into a Stater Kit. 
+Some of the things out of the box are,
 
-* Devel­op­ment / Pro­duc­tion — Sep­a­rate dev and prod con­figs & builds. Local devel­op­ment means fast builds via the in-mem­o­ry web­pack-dev-serv­er, and for pro­duc­tion builds every pos­si­ble opti­miza­tion needs to be utilized, making for slower builds at the gain of better optimizations.
+* Webpack Devel­op­ment / Pro­duc­tion — Sep­a­rate dev and prod con­figs & builds. Local devel­op­ment means fast builds via the in-mem­o­ry web­pack-dev-serv­er, and for pro­duc­tion builds every pos­si­ble opti­miza­tion needs to be utilized, making for slower builds at the gain of better optimizations.
 
 * Hot Mod­ule Replace­ment — as changes are made to JavaScript, CSS, or tem­plates, the web­page seam­less­ly refreshes.
 
