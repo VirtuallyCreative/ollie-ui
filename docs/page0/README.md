@@ -1,6 +1,6 @@
 # Ecosystem
 
-The idea for Ollie to be a rapid SPA starter kit means it makes little assumptions about what front-end stack you're going to use.
+Ollie is a rapid SPA starter kit meaning it makes little assumptions about what front-end stack you're going to use with it.
 
 Out of the box, Ollie contains a micro CSS framework also made by Virtually(Creative) called, [Allegretto](https://allegretto.herokuapp.com).
 
@@ -16,9 +16,11 @@ This light-weight framework helps with making simple layouts with easy to pick-u
 - Normalize CSS reset baked in
 - No Pre-Processer here, just vanilla CSS-3
 
-You can easily swap it for whatever front-end framework you wish - a few favourites at Virtually(Creative) are below! 
+But, you can easily swap it out for whatever front-end framework you wish - a few favourites at Virtually(Creative) are listed below!
 
-Allegretto is referenced in the `<head>` tag in `/src/index.ejs`.
+## Allegretto CSS
+
+To replace it, swap the Allegretto reference in the `<head>` tag in `/src/index.ejs`.
 
 ```html
   <!-- Load Allegretto from CDN -->
@@ -40,3 +42,5 @@ Ollie also plays well with (in no particular order...),
 - [PureCSS](https://purecss.io/start/)
 - [Teutonic](https://teutonic.co/usage)
 - [Mustard UI](https://mustard-ui.com)
+
+Follow their getting started instructions and replace the Allegretto reference with the framework you wish.
