@@ -22,7 +22,7 @@
 
 * [Web Development Server](page4/README.md)
   * [ExpressJS](page4/page4-1.md)
-  * [Work-In-Progress / Sharing](page4/page4-2.md)
+  * [Sharing Work-In-Progress](page4/page4-2.md)
 
 ## Automation
 
