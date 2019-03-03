@@ -1,6 +1,6 @@
 # Summary
 
-* [Ecosystem](page0/README.md)
+  * [Ecosystem](page0/README.md)
   * [Features Roadmap](page0/page0-1.md)
   * [Contributing](page0/page0-2.md)
 
