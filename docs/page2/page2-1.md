@@ -1,12 +1,12 @@
 # Editor Features & Recommendations
 
 There's a wonderful selection of powerful editors these
-days, but these are the four that I recommend considering.
+days, but these are the two that I recommend considering.
 
-These editors offer many, if not all the
-benefits that I listed previously.
+These editors offer many, if not all the benefits that I listed previously.
 
-WebStorm is currently one of the best editors available, however it's also the only option on this list that isn't free, but it does offer a free 30-day trial.
+WebStorm is currently one of the best editors available, however it's also
+the only option on this list that isn't free, but it does offer a free 30-day trial.
 
 At Virtually(Creative) we use VSCode because it's free,
 it's fast, it offers a built-in terminal, it has
