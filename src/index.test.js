@@ -14,7 +14,7 @@ describe('index.html', () => {
     const { JSDOM } = jsdom;
     const dom = new JSDOM(index);
     const h1 = dom.window.document.getElementsByTagName("h1")[0];
-    expect(h1.innerHTML).to.equal("Users");
+    expect(h1.innerHTML).to.equal("Mock API Data");
     dom.window.close();
   })
 })

@@ -39,13 +39,10 @@ export default {
       debug: false,
       noInfo: true // set to false to see a list of every file being bundled.
     }),
-
     // Generate an external css file with a hash in the filename
     new ExtractTextPlugin('[name].[md5:contenthash:hex:20].css'),
-
     // Hash the files using MD5 so that their names change when the content changes.
     new WebpackMd5Hash(),
-
     // Create HTML file that includes reference to bundled JS.
     new HtmlWebpackPlugin({
       template: 'src/index.ejs',
@@ -61,9 +58,10 @@ export default {
         minifyCSS: true,
         minifyURLs: true
       },
-      inject: true
+      inject: true,
       // Properties you define here are available in index.html
-      // using htmlWebpackPlugin.options.varName
+      // using htmlWebpackPlugin.options.rollbarToken
+      rollbarToken: '34fc7ceed31a46ff8df30cd39f52d961'
     })
   ],
   module: {
