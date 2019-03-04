@@ -22,14 +22,15 @@ let rollbar = new Rollbar({
 });
 
 app.use(rollbar.errorHandler());
+app.use(express.static('src'))
 
 app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
-}))
+}));
 
 app.get('/', function mainHandler(req, res) {
     res.sendFile(path.join(__dirname, '../src/index.ejs'))
-})
+});
 
 app.get('/users', function(req, res) {
   // Hard coded for simplicity. Pretend this is a real endpoint...
@@ -38,7 +39,7 @@ app.get('/users', function(req, res) {
     {"id":2,"firstName":"Abe","lastName":"Doe","email":"abe.doe@email.com"},
     {"id":3,"firstName":"Rob","lastName":"Johnson","email":"rob.johnson@email.com"}
   ])
-})
+});
 
 // The error handler must be before any other error middleware
 app.use(rollbar.errorHandler());
@@ -50,4 +51,4 @@ app.listen(port, function(err) {
     } else {
         open('http://localhost:' + port)
     }
-})
+});

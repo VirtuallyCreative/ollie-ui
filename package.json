@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VirtuallyCreative/Ollie.git"
+    "url": "git+https://github.com/VirtuallyCreative/ollie-ui.git"
   },
   "keywords": [
     "SPA",
@@ -36,9 +36,9 @@
   "author": "Al 'Vip3rousmango' Romano",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/VirtuallyCreative/Ollie/issues"
+    "url": "https://github.com/VirtuallyCreative/ollie-ui/issues"
   },
-  "homepage": "https://github.com/VirtuallyCreative/Ollie#readme",
+  "homepage": "https://github.com/VirtuallyCreative/ollie-ui#readme",
   "dependencies": {
     "dotenv": "^6.2.0",
     "rollbar": "^2.5.2",
