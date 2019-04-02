@@ -11,7 +11,7 @@
 <br /><br />
 Ollie is an opinionated boilerplate for creating rapid Single Page Application wireframes and microsites.
 
-To learn more check out the Docs, [![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://virtuallycreative.gitbook.io/ollie-framework/v/docs/)
+To learn more check out the Docs, [![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://docs.virtuallycreative.ca/ollie-framework/v/docs/)
 
 ## Why Ollie
 
