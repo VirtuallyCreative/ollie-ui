@@ -44,7 +44,7 @@ Some of the things out of the box are,
 
 Ollie uses a Express, with a centralized API approach which configures all calls, handles pre-loader logic and also errors.
 
-To learn more check out the Docs, [![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://virtuallycreative.gitbook.io/ollie-framework/v/docs/development-server/page4/page4-1)
+To learn more check out the Docs, [![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://docs.virtuallycreative.ca/ollie-framework/v/docs/development-server/page4/page4-1)
 
 ## Ecosystem
 
@@ -60,7 +60,7 @@ Its referenced in the `<head>` tag in `/src/index.ejs`.
 |---------|--------|-------------|
 | [Allegretto](https://github.com/VirtuallyCreative/allegretto)          | [![Build Status](https://travis-ci.org/VirtuallyCreative/allegretto.svg?branch=master)](https://travis-ci.org/VirtuallyCreative/allegretto) | Lightweight CSS Framework |
 
-To learn more check out the Docs, [![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://virtuallycreative.gitbook.io/ollie-framework/v/docs/package-management/page3/page3-2)
+To learn more check out the Docs, [![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://docs.virtuallycreative.ca/ollie-framework/v/docs/package-management/page3/page3-2)
 
 ## Get Started
 
