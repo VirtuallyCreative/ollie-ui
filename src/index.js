@@ -1,7 +1,8 @@
 import {
   getUsers,
-  deleteUser
-} from './api/userAPI';
+  deleteUser,
+  addUser
+} from '../api/userAPI';
 // Dynamically Generate Table data from API with no JS framework
 
 
@@ -13,6 +14,7 @@ getUsers('users').then(result => {
   result.forEach(user => {
     usersBody += `<tr>
     <td><a href="#" data-id="${user.id}" class="deleteUser">Delete</a></td>
+    <td><a href="#" data-id="${user.id}" class="addUser">Add</a></td>
     <td>${user.id}</td>
     <td>${user.firstName}</td>
     <td>${user.lastName}</td>
@@ -24,6 +26,8 @@ getUsers('users').then(result => {
   // Replace blank tablebody with one using Data above
   userTbl.innerHTML = usersBody;
 
+
+  // Setup Delete User
   const deleteLinks = global.document.getElementsByClassName("deleteUser")
 
   // Must use array.from to create a real array from a DOM collection
@@ -38,5 +42,21 @@ getUsers('users').then(result => {
       row.parentNode.removeChild(row) //removes the clicked row from DOM
     }
   })
+
+    // Setup Add User
+    const addLinks = global.document.getElementsByClassName("addUser")
+
+    // Must use array.from to create a real array from a DOM collection
+    // getElementbyClassname only returns an "array like" object
+    Array.from(addLinks, link => {
+      //Attach click handler to each link in the list
+      link.onclick = function (event) {
+        const element = event.target
+        event.preventDefault() // stops any change to the URL
+        addUser(element.attributes["data-id"].value)
+        const row = element.parentNode.parentNode;
+        row.parentNode.appendChild(row) //add a row to from DOM when clicked
+      }
+    })
 
 })
