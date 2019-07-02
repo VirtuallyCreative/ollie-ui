@@ -34,9 +34,9 @@ app.get('/', function mainHandler(req, res) {
 app.get('/users', function(req, res) {
   // Hard coded for simplicity. Pretend this is a real endpoint...
   res.json([
-    {"id":1,"firstName":"Bob","lastName":"Smith","email":"bob.smith@email.com"},
-    {"id":2,"firstName":"Abe","lastName":"Doe","email":"abe.doe@email.com"},
-    {"id":3,"firstName":"Rob","lastName":"Johnson","email":"rob.johnson@email.com"}
+    {"id":1,"firstName":"Al","lastName":"Romano","email":"viperousmango@gmail.com"},
+    {"id":2,"firstName":"Alex","lastName":"Romano","email":"alexander.romano@live.com"},
+    {"id":3,"firstName":"Alexander","lastName":"Romano","email":"alexander@virtuallycreative.ca"}
   ])
 })
 
