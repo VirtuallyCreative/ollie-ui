@@ -7,7 +7,7 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 export default {
   mode: 'production',
   resolve: {
-    extensions: ['*', '.js', '.jsx', '.json']
+    extensions: ['*', '.js', '.json']
   },
   devtool: 'source-map',
   entry: {

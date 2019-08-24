@@ -37,12 +37,14 @@ node_modules/
 jspm_packages/
 .vs
 .vscode
+.idea
 
 # TypeScript v1 declaration files
 typings/
 
 # Optional npm cache directory
 .npm
+.cache
 
 # Optional eslint cache
 .eslintcache
