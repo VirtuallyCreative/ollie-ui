@@ -13,7 +13,7 @@ let { expect } = require('chai'),
 
 describe('index.html', () => {
     it('should have h1 that says Users', () => {
-        const index = fs.readFileSync(path.resolve(__dirname, '../src/index.html')).toString('utf8');
+        const index = fs.readFileSync(path.resolve(__dirname, '../src/index.ejs')).toString('utf8');
         const { JSDOM } = jsdom;
         const dom = new JSDOM(index);
         const h1 = dom.window.document.getElementsByTagName("h1")[0];
