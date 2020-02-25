@@ -12,11 +12,11 @@
 <br /><br />
 Ollie is an opinionated boilerplate for creating rapid Single Page Application wireframes and microsites.
 
-To learn more check out the Docs, [![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://docs.virtuallycreative.ca/ollie-framework/v/docs/)
+To learn more [Check out the Documentation](https://ollie-ui.dev), [![Netlify Status](https://api.netlify.com/api/v1/badges/fb885684-273e-45f7-8d2b-c136e68f6bb4/deploy-status)](https://app.netlify.com/sites/ollie-ui-docs-5325e/deploys)
 
 ## Why Ollie
 
-Lots of decisions can go into a boilerplate - so after making these decisions over and over they're now baked into a Stater Kit. 
+Lots of decisions can go into a boilerplate - so after making these decisions over and over they're now baked into a Stater Kit.
 Some of the things out of the box are,
 
 * Webpack Devel­op­ment / Pro­duc­tion — Sep­a­rate dev and prod con­figs & builds. Local devel­op­ment means fast builds via the in-mem­o­ry web­pack-dev-serv­er, and for pro­duc­tion builds every pos­si­ble opti­miza­tion needs to be utilized, making for slower builds at the gain of better optimizations.
@@ -43,9 +43,9 @@ Some of the things out of the box are,
 
 ## HTTP & API
 
-Ollie uses a Express, with a centralized API approach which configures all calls, handles pre-loader logic and also errors.
+Ollie uses ExpressJS, with a centralized API approach which configures all calls, handles pre-loader logic and also errors.
 
-To learn more check out the Docs, [![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://docs.virtuallycreative.ca/ollie-framework/v/docs/development-server/page4/page4-1)
+To learn more [Check out the Documentation](https://ollie-ui.dev).
 
 ## Ecosystem
 
@@ -61,7 +61,7 @@ Its referenced in the `<head>` tag in `/src/index.ejs`.
 |---------|--------|-------------|
 | [Allegretto](https://github.com/VirtuallyCreative/allegretto)          | [![Build Status](https://travis-ci.org/VirtuallyCreative/allegretto.svg?branch=master)](https://travis-ci.org/VirtuallyCreative/allegretto) | Lightweight CSS Framework |
 
-To learn more check out the Docs, [![GitBook](https://img.shields.io/badge/docs-gitbook-blue.svg)](https://docs.virtuallycreative.ca/ollie-framework/v/docs/package-management/page3/page3-2)
+To learn more [Check out the Documentation](https://ollie-ui.dev)
 
 ## Get Started
 
