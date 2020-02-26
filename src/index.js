@@ -1,18 +1,22 @@
+// Import CSS
+import './index.css';
+
+// Import JS
 import {
-  getUsers,
-  deleteUser,
-  addUser
+    getUsers,
+    deleteUser,
+    addUser
 } from '../api/userAPI';
 // Dynamically Generate Table data from API with no JS framework
 
 
 // Populate table of users vai mock API call - do not put slash in path
 getUsers('users').then(result => {
-  // Start with Empty Obj
-  let usersBody = "";
-  // Loop through Data and display using Table
-  result.forEach(user => {
-    usersBody += `<tr>
+    // Start with Empty Obj
+    let usersBody = "";
+    // Loop through Data and display using Table
+    result.forEach(user => {
+        usersBody += `<tr>
     <td><a href="#" data-id="${user.id}" class="deleteUser">Delete</a></td>
     <td><a href="#" data-id="${user.id}" class="addUser">Add</a></td>
     <td>${user.id}</td>
@@ -20,28 +24,28 @@ getUsers('users').then(result => {
     <td>${user.lastName}</td>
     <td>${user.email}</td>
     </tr>`
-  });
-  // Find Table on Page
-  var userTbl = global.document.getElementById('userTbl');
-  // Replace blank tablebody with one using Data above
-  userTbl.innerHTML = usersBody;
+    });
+    // Find Table on Page
+    var userTbl = global.document.getElementById('userTbl');
+    // Replace blank tablebody with one using Data above
+    userTbl.innerHTML = usersBody;
 
 
-  // Setup Delete User
-  const deleteLinks = global.document.getElementsByClassName("deleteUser")
+    // Setup Delete User
+    const deleteLinks = global.document.getElementsByClassName("deleteUser")
 
-  // Must use array.from to create a real array from a DOM collection
-  // getElementbyClassname only returns an "array like" object
-  Array.from(deleteLinks, link => {
-    //Attach click handler to each link in the list
-    link.onclick = function (event) {
-      const element = event.target
-      event.preventDefault() // stops any change to the URL
-      deleteUser(element.attributes["data-id"].value)
-      const row = element.parentNode.parentNode;
-      row.parentNode.removeChild(row) //removes the clicked row from DOM
-    }
-  })
+    // Must use array.from to create a real array from a DOM collection
+    // getElementbyClassname only returns an "array like" object
+    Array.from(deleteLinks, link => {
+        //Attach click handler to each link in the list
+        link.onclick = function (event) {
+            const element = event.target
+            event.preventDefault() // stops any change to the URL
+            deleteUser(element.attributes["data-id"].value)
+            const row = element.parentNode.parentNode;
+            row.parentNode.removeChild(row) //removes the clicked row from DOM
+        }
+    })
 
     // Setup Add User
     const addLinks = global.document.getElementsByClassName("addUser")
@@ -49,14 +53,14 @@ getUsers('users').then(result => {
     // Must use array.from to create a real array from a DOM collection
     // getElementbyClassname only returns an "array like" object
     Array.from(addLinks, link => {
-      //Attach click handler to each link in the list
-      link.onclick = function (event) {
-        const element = event.target
-        event.preventDefault() // stops any change to the URL
-        addUser(element.attributes["data-id"].value)
-        const row = element.parentNode.parentNode;
-        row.parentNode.appendChild(row) //add a row to from DOM when clicked
-      }
+        //Attach click handler to each link in the list
+        link.onclick = function (event) {
+            const element = event.target
+            event.preventDefault() // stops any change to the URL
+            addUser(element.attributes["data-id"].value)
+            const row = element.parentNode.parentNode;
+            row.parentNode.appendChild(row) //add a row to from DOM when clicked
+        }
     })
 
 })

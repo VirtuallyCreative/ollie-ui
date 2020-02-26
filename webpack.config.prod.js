@@ -39,7 +39,7 @@ export default {
             // jQuery: "jquery"
         }),
         new CopyWebpackPlugin([
-            { from: 'src/public', to: 'public' }
+            { from: 'src/assets/img', to: 'assets/img' }
         ]),
         // Global loader configuration
         new webpack.LoaderOptionsPlugin({
@@ -53,7 +53,7 @@ export default {
             // Options similar to the same options in webpackOptions.output
             // both options are optional
             filename: '[name].css',
-            chunkFilename: '[md5:contenthash:hex:20].css',
+            chunkFilename: '[name].[md5:contenthash:hex:20].css',
         }),
         // new MiniCssExtractPlugin('[name].[md5:contenthash:hex:20].css'),
 
@@ -96,11 +96,8 @@ export default {
                 exclude: /node_modules/, loader: 'babel-loader'
             },
             {
-                test: /\.css$/,
-                use: [
-                    { loader: MiniCssExtractPlugin.loader, },
-                    "css-loader"
-                ]
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
                 test: /\.(png|jpg|gif)$/,

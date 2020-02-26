@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 export default {
     mode: 'development',
@@ -27,14 +28,22 @@ export default {
         new HtmlWebpackPlugin({
             template: 'src/index.ejs',
             inject: true
+        }),
+        new MiniCssExtractPlugin({
+            // Options similar to the same options in webpackOptions.output
+            // both options are optional
+            filename: '[name].css',
         })
     ],
     module: {
         rules: [
             { test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader'] },
-            { test: /\.css$/, loaders: ['style-loader', 'css-loader'] },
+            {
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+            },
             // Handle images inside CSS files
-            { test: /\.(png|jpg|gif)$/, use: ['file-loader'] },
+            { test: /\.(png|svg|jpg|gif)$/, use: ['file-loader'] },
         ]
     }
 }

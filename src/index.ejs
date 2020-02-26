@@ -352,15 +352,18 @@
 
     <!-- Load Allegretto from CDN -->
     <link rel="stylesheet" href="https://unpkg.com/allegretto@latest/dist/retto.min.css" type="text/css" media="all">
+
     <base href="/">
 </head>
 
 <body>
     <nav class="nav">
         <div class="nav-left">
-            <a class="brand" href="#">
-                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
-                Ollie-ui</a>
+            <a class="brand" href="https://ollie-ui.dev" target="_blank">
+                <!-- <img src="./assets/img/ollie-ui.png" alt="Ollie-UI"> -->
+                <!-- For Allegretto CSS no empty links ... -->
+                <span></span>
+            </a>
         </div>
         <div class="nav-right">
             <div class="tabs">
@@ -403,7 +406,7 @@
 
     <footer class="is-text-center">
         <p>
-            <a href="#top">back to top</a> &bull; <a href="https://github.com/VirtuallyCreative/Ollie"
+            <a href="#top">back to top</a> &bull; <a href="https://github.com/VirtuallyCreative/Ollie-UI"
                 target="_blank">View
                 on GitHub</a>
         </p>
@@ -439,6 +442,26 @@
         <p><img src="//analytics.virtuallycreative.ca/piwik.php?idsite=6&amp;rec=1" style="border:0;" alt="" /></p>
     </noscript>
     <!-- End Matomo Code -->
+    <script>
+        // Fancy non-jQuery version of Document.Ready
+        var DOMReady = function (callback) {
+            document.readyState === "interactive" || document.readyState === "complete" ? callback() : document
+                .addEventListener("DOMContentLoaded", callback());
+        };
+
+        DOMReady(function () {
+            // DOM ready!
+            // ---
+            // initSomething()
+            console.log('Ollie-UI is ready.');
+            console.log('---- HEY YOU ----');
+            console.log(
+                'Like tech stuffs? Want to contribute to Ollie-UI? :: https://github.com/virtuallycreative/ollie-ui'
+            );
+            console.log('Join the dev community! :: https://spectrum.chat/ollie-framework');
+        });
+
+    </script>
 </body>
 
 </html>

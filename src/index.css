@@ -1,11 +1,19 @@
 :root {
-  --primary-color: #d39d09;
+    --primary-color: #d39d09;
 }
 
 a {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 table {
-  overflow-y: hidden;
+    overflow-y: hidden;
+}
+
+nav a.brand {
+    background-image: url(./assets/img/ollie-ui.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12rem;
 }
