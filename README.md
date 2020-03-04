@@ -12,7 +12,7 @@
 <br /><br />
 Ollie is an opinionated boilerplate for creating rapid Single Page Application wireframes and microsites.
 
-To learn more [Check out the Documentation](https://ollie-ui.dev), [![Netlify Status](https://api.netlify.com/api/v1/badges/fb885684-273e-45f7-8d2b-c136e68f6bb4/deploy-status)](https://app.netlify.com/sites/ollie-ui-docs-5325e/deploys)
+To learn more [Check out the Documentation](https://ollie-ui.dev) || Docs Build: [![Netlify Status](https://api.netlify.com/api/v1/badges/fb885684-273e-45f7-8d2b-c136e68f6bb4/deploy-status)](https://app.netlify.com/sites/ollie-ui-docs-5325e/deploys)
 
 ## Why Ollie
 
