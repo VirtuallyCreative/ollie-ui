@@ -41,7 +41,7 @@
   "homepage": "https://github.com/VirtuallyCreative/Ollie#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "rollbar": "^2.18.0",
+    "rollbar": "^2.24.0",
     "whatwg-fetch": "3.0.0"
   },
   "devDependencies": {
