@@ -14,6 +14,8 @@ Ollie is an opinionated boilerplate for creating rapid Single Page Application w
 
 To learn more [Check out the Documentation](https://ollie-ui.dev) || Docs Build: [![Netlify Status](https://api.netlify.com/api/v1/badges/fb885684-273e-45f7-8d2b-c136e68f6bb4/deploy-status)](https://app.netlify.com/sites/ollie-ui-docs-5325e/deploys)
 
+<3 In loving memory of Ollie, who taught me patenence and love. He filled our lives with much joy and is the basis of what this whole starter-kit was about.
+
 ## Why Ollie
 
 Lots of decisions can go into a boilerplate - so after making these decisions over and over they're now baked into a Stater Kit.
